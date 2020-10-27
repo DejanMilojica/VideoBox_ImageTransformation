@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="399" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="150" />
+   <description preferredWidth="178" />
+   <inputclock preferredWidth="137" />
+   <baseaddress preferredWidth="137" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Library,Project,Project/VideoBox_Team_3" />
+ <window width="1365" height="728" x="0" y="0" />
+ <generation synthesis="VHDL" />
+ <hdlexample language="VHDL" />
+</preferences>

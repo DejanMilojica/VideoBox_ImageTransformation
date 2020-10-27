@@ -1,0 +1,249 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\PC\Desktop\PDS\VideoBox_ImageTransformation_v3\VideoBox_presentable\VideoBox.qsys --block-symbol-file --output-directory=C:\Users\PC\Desktop\PDS\VideoBox_ImageTransformation_v3\VideoBox_presentable\VideoBox --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading VideoBox_presentable/VideoBox.qsys
+Progress: Reading input file
+Progress: Adding DMA_CONTROLLER_UPIS [altera_up_avalon_video_dma_controller 16.1]
+Progress: Parameterizing module DMA_CONTROLLER_UPIS
+Progress: Adding Image_Processing_0 [Image_Processing 1.0]
+Progress: Parameterizing module Image_Processing_0
+Progress: Adding Izbor_Prikaza_Slike_0 [Izbor_Prikaza_Slike 1.0]
+Progress: Parameterizing module Izbor_Prikaza_Slike_0
+Progress: Adding Pozicioniranje_Piksela_u_SDRAM_0 [Pozicioniranje_Piksela_u_SDRAM 1.0]
+Progress: Parameterizing module Pozicioniranje_Piksela_u_SDRAM_0
+Progress: Adding Transformacija_Pozicije_Piksela [Transformacija_Slike 1.0]
+Progress: Parameterizing module Transformacija_Pozicije_Piksela
+Progress: Adding affine_matrix [altera_avalon_onchip_memory2 16.1]
+Progress: Parameterizing module affine_matrix
+Progress: Adding dma_afina_matrica_citanje [altera_up_avalon_video_dma_controller 16.1]
+Progress: Parameterizing module dma_afina_matrica_citanje
+Progress: Adding hps [altera_hps 16.1]
+Progress: Parameterizing module hps
+Progress: Adding led_indication_0 [altera_avalon_pio 16.1]
+Progress: Parameterizing module led_indication_0
+Progress: Adding sdram_controller [altera_avalon_new_sdram_controller 16.1]
+Progress: Parameterizing module sdram_controller
+Progress: Adding sys_sdram_pll [altera_up_avalon_sys_sdram_pll 16.1]
+Progress: Parameterizing module sys_sdram_pll
+Progress: Adding vga_pll [altera_pll 16.1]
+Progress: Parameterizing module vga_pll
+Progress: Adding vide_dma_controller [altera_up_avalon_video_dma_controller 16.1]
+Progress: Parameterizing module vide_dma_controller
+Progress: Adding vide_dma_controller_CITANJE [altera_up_avalon_video_dma_controller 16.1]
+Progress: Parameterizing module vide_dma_controller_CITANJE
+Progress: Adding vide_dma_controller_CITANJE_0 [altera_up_avalon_video_dma_controller 16.1]
+Progress: Parameterizing module vide_dma_controller_CITANJE_0
+Progress: Adding video_dual_clock_buffer [altera_up_avalon_video_dual_clock_buffer 16.1]
+Progress: Parameterizing module video_dual_clock_buffer
+Progress: Adding video_rgb_resampler_0 [altera_up_avalon_video_rgb_resampler 16.1]
+Progress: Parameterizing module video_rgb_resampler_0
+Progress: Adding video_vga_controller [altera_up_avalon_video_vga_controller 16.1]
+Progress: Parameterizing module video_vga_controller
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: VideoBox.hps: HPS Main PLL counter settings: n = 0  m = 73
+Info: VideoBox.hps: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: VideoBox.hps: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: VideoBox.hps: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: VideoBox.hps: set_interface_assignment: Interface "hps_io" does not exist
+Info: VideoBox.sdram_controller: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: VideoBox.vga_pll: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: VideoBox.vga_pll: Able to implement PLL with user settings
+Info: VideoBox.video_rgb_resampler_0: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: VideoBox.video_vga_controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Warning: VideoBox.Izbor_Prikaza_Slike_0.led_master/led_indication_0.s1: Master Izbor_Prikaza_Slike_0.led_master cannot safely write to slave led_indication_0.s1, because the master data width is narrower than the slave data width. Add byteenable support to the slave to support safe writes from a narrow master.
+Warning: VideoBox.Pozicioniranje_Piksela_u_SDRAM_0.out_piksel: Pozicioniranje_Piksela_u_SDRAM_0.out_piksel must be connected to an Avalon-ST sink
+Warning: VideoBox.Pozicioniranje_Piksela_u_SDRAM_0.in_piksel: Pozicioniranje_Piksela_u_SDRAM_0.in_piksel must be connected to an Avalon-ST source
+Warning: VideoBox.vga_pll: vga_pll.locked must be exported, or connected to a matching conduit.
+Warning: VideoBox.Transformacija_Pozicije_Piksela: Transformacija_Pozicije_Piksela.avalon_slave_parametar must be connected to an Avalon-MM master
+Warning: VideoBox.affine_matrix: affine_matrix.s2 must be connected to an Avalon-MM master
+Warning: VideoBox.dma_afina_matrica_citanje: dma_afina_matrica_citanje.avalon_dma_control_slave must be connected to an Avalon-MM master
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\PC\Desktop\PDS\VideoBox_ImageTransformation_v3\VideoBox_presentable\VideoBox.qsys --synthesis=VHDL --output-directory=C:\Users\PC\Desktop\PDS\VideoBox_ImageTransformation_v3\VideoBox_presentable\VideoBox\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading VideoBox_presentable/VideoBox.qsys
+Progress: Reading input file
+Progress: Adding DMA_CONTROLLER_UPIS [altera_up_avalon_video_dma_controller 16.1]
+Progress: Parameterizing module DMA_CONTROLLER_UPIS
+Progress: Adding Image_Processing_0 [Image_Processing 1.0]
+Progress: Parameterizing module Image_Processing_0
+Progress: Adding Izbor_Prikaza_Slike_0 [Izbor_Prikaza_Slike 1.0]
+Progress: Parameterizing module Izbor_Prikaza_Slike_0
+Progress: Adding Pozicioniranje_Piksela_u_SDRAM_0 [Pozicioniranje_Piksela_u_SDRAM 1.0]
+Progress: Parameterizing module Pozicioniranje_Piksela_u_SDRAM_0
+Progress: Adding Transformacija_Pozicije_Piksela [Transformacija_Slike 1.0]
+Progress: Parameterizing module Transformacija_Pozicije_Piksela
+Progress: Adding affine_matrix [altera_avalon_onchip_memory2 16.1]
+Progress: Parameterizing module affine_matrix
+Progress: Adding dma_afina_matrica_citanje [altera_up_avalon_video_dma_controller 16.1]
+Progress: Parameterizing module dma_afina_matrica_citanje
+Progress: Adding hps [altera_hps 16.1]
+Progress: Parameterizing module hps
+Progress: Adding led_indication_0 [altera_avalon_pio 16.1]
+Progress: Parameterizing module led_indication_0
+Progress: Adding sdram_controller [altera_avalon_new_sdram_controller 16.1]
+Progress: Parameterizing module sdram_controller
+Progress: Adding sys_sdram_pll [altera_up_avalon_sys_sdram_pll 16.1]
+Progress: Parameterizing module sys_sdram_pll
+Progress: Adding vga_pll [altera_pll 16.1]
+Progress: Parameterizing module vga_pll
+Progress: Adding vide_dma_controller [altera_up_avalon_video_dma_controller 16.1]
+Progress: Parameterizing module vide_dma_controller
+Progress: Adding vide_dma_controller_CITANJE [altera_up_avalon_video_dma_controller 16.1]
+Progress: Parameterizing module vide_dma_controller_CITANJE
+Progress: Adding vide_dma_controller_CITANJE_0 [altera_up_avalon_video_dma_controller 16.1]
+Progress: Parameterizing module vide_dma_controller_CITANJE_0
+Progress: Adding video_dual_clock_buffer [altera_up_avalon_video_dual_clock_buffer 16.1]
+Progress: Parameterizing module video_dual_clock_buffer
+Progress: Adding video_rgb_resampler_0 [altera_up_avalon_video_rgb_resampler 16.1]
+Progress: Parameterizing module video_rgb_resampler_0
+Progress: Adding video_vga_controller [altera_up_avalon_video_vga_controller 16.1]
+Progress: Parameterizing module video_vga_controller
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: VideoBox.hps: HPS Main PLL counter settings: n = 0  m = 73
+Info: VideoBox.hps: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: VideoBox.hps: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: VideoBox.hps: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: VideoBox.hps: set_interface_assignment: Interface "hps_io" does not exist
+Info: VideoBox.sdram_controller: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: VideoBox.vga_pll: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: VideoBox.vga_pll: Able to implement PLL with user settings
+Info: VideoBox.video_rgb_resampler_0: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: VideoBox.video_vga_controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Warning: VideoBox.Izbor_Prikaza_Slike_0.led_master/led_indication_0.s1: Master Izbor_Prikaza_Slike_0.led_master cannot safely write to slave led_indication_0.s1, because the master data width is narrower than the slave data width. Add byteenable support to the slave to support safe writes from a narrow master.
+Warning: VideoBox.Pozicioniranje_Piksela_u_SDRAM_0.out_piksel: Pozicioniranje_Piksela_u_SDRAM_0.out_piksel must be connected to an Avalon-ST sink
+Warning: VideoBox.Pozicioniranje_Piksela_u_SDRAM_0.in_piksel: Pozicioniranje_Piksela_u_SDRAM_0.in_piksel must be connected to an Avalon-ST source
+Warning: VideoBox.vga_pll: vga_pll.locked must be exported, or connected to a matching conduit.
+Warning: VideoBox.Transformacija_Pozicije_Piksela: Transformacija_Pozicije_Piksela.avalon_slave_parametar must be connected to an Avalon-MM master
+Warning: VideoBox.affine_matrix: affine_matrix.s2 must be connected to an Avalon-MM master
+Warning: VideoBox.dma_afina_matrica_citanje: dma_afina_matrica_citanje.avalon_dma_control_slave must be connected to an Avalon-MM master
+Info: VideoBox: Generating VideoBox "VideoBox" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master Izbor_Prikaza_Slike_0.led_master and slave led_indication_0.s1 because the master has writedata signal 8 bit wide, but the slave is 32 bit wide.
+Info: Interconnect is inserted between master Izbor_Prikaza_Slike_0.led_master and slave led_indication_0.s1 because the master has waitrequest signal 1 bit wide, but the slave is 0 bit wide.
+Info: DMA_CONTROLLER_UPIS: Starting Generation of Video DMA Controller
+Info: DMA_CONTROLLER_UPIS: "VideoBox" instantiated altera_up_avalon_video_dma_controller "DMA_CONTROLLER_UPIS"
+Info: Image_Processing_0: "VideoBox" instantiated Image_Processing "Image_Processing_0"
+Info: Izbor_Prikaza_Slike_0: "VideoBox" instantiated Izbor_Prikaza_Slike "Izbor_Prikaza_Slike_0"
+Info: Pozicioniranje_Piksela_u_SDRAM_0: "VideoBox" instantiated Pozicioniranje_Piksela_u_SDRAM "Pozicioniranje_Piksela_u_SDRAM_0"
+Info: Transformacija_Pozicije_Piksela: "VideoBox" instantiated Transformacija_Slike "Transformacija_Pozicije_Piksela"
+Info: affine_matrix: Starting RTL generation for module 'VideoBox_affine_matrix'
+Info: affine_matrix:   Generation command is [exec D:/quartus/quartus/bin64/perl/bin/perl.exe -I D:/quartus/quartus/bin64/perl/lib -I D:/quartus/quartus/sopc_builder/bin/europa -I D:/quartus/quartus/sopc_builder/bin/perl_lib -I D:/quartus/quartus/sopc_builder/bin -I D:/quartus/quartus/../ip/altera/sopc_builder_ip/common -I D:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=VideoBox_affine_matrix --dir=C:/Users/PC/AppData/Local/Temp/alt8561_6934901605454534307.dir/0007_affine_matrix_gen/ --quartus_dir=D:/quartus/quartus --verilog --config=C:/Users/PC/AppData/Local/Temp/alt8561_6934901605454534307.dir/0007_affine_matrix_gen//VideoBox_affine_matrix_component_configuration.pl  --do_build_sim=0  ]
+Info: affine_matrix: Done RTL generation for module 'VideoBox_affine_matrix'
+Info: affine_matrix: "VideoBox" instantiated altera_avalon_onchip_memory2 "affine_matrix"
+Info: dma_afina_matrica_citanje: Starting Generation of Video DMA Controller
+Info: dma_afina_matrica_citanje: "VideoBox" instantiated altera_up_avalon_video_dma_controller "dma_afina_matrica_citanje"
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_up_video_dma_control_slave.v
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_up_video_dma_to_memory.v
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_up_video_dma_to_stream.v
+Info: hps: "Running  for module: hps"
+Info: hps: HPS Main PLL counter settings: n = 0  m = 73
+Info: hps: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hps: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: hps: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: hps: set_interface_assignment: Interface "hps_io" does not exist
+Info: hps: "VideoBox" instantiated altera_hps "hps"
+Info: led_indication_0: Starting RTL generation for module 'VideoBox_led_indication_0'
+Info: led_indication_0:   Generation command is [exec D:/quartus/quartus/bin64/perl/bin/perl.exe -I D:/quartus/quartus/bin64/perl/lib -I D:/quartus/quartus/sopc_builder/bin/europa -I D:/quartus/quartus/sopc_builder/bin/perl_lib -I D:/quartus/quartus/sopc_builder/bin -I D:/quartus/quartus/../ip/altera/sopc_builder_ip/common -I D:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=VideoBox_led_indication_0 --dir=C:/Users/PC/AppData/Local/Temp/alt8561_6934901605454534307.dir/0009_led_indication_0_gen/ --quartus_dir=D:/quartus/quartus --verilog --config=C:/Users/PC/AppData/Local/Temp/alt8561_6934901605454534307.dir/0009_led_indication_0_gen//VideoBox_led_indication_0_component_configuration.pl  --do_build_sim=0  ]
+Info: led_indication_0: Done RTL generation for module 'VideoBox_led_indication_0'
+Info: led_indication_0: "VideoBox" instantiated altera_avalon_pio "led_indication_0"
+Info: sdram_controller: Starting RTL generation for module 'VideoBox_sdram_controller'
+Info: sdram_controller:   Generation command is [exec D:/quartus/quartus/bin64/perl/bin/perl.exe -I D:/quartus/quartus/bin64/perl/lib -I D:/quartus/quartus/sopc_builder/bin/europa -I D:/quartus/quartus/sopc_builder/bin/perl_lib -I D:/quartus/quartus/sopc_builder/bin -I D:/quartus/quartus/../ip/altera/sopc_builder_ip/common -I D:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- D:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=VideoBox_sdram_controller --dir=C:/Users/PC/AppData/Local/Temp/alt8561_6934901605454534307.dir/0010_sdram_controller_gen/ --quartus_dir=D:/quartus/quartus --verilog --config=C:/Users/PC/AppData/Local/Temp/alt8561_6934901605454534307.dir/0010_sdram_controller_gen//VideoBox_sdram_controller_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram_controller: Done RTL generation for module 'VideoBox_sdram_controller'
+Info: sdram_controller: "VideoBox" instantiated altera_avalon_new_sdram_controller "sdram_controller"
+Info: sys_sdram_pll: "VideoBox" instantiated altera_up_avalon_sys_sdram_pll "sys_sdram_pll"
+Info: vga_pll: "VideoBox" instantiated altera_pll "vga_pll"
+Info: vide_dma_controller: Starting Generation of Video DMA Controller
+Info: vide_dma_controller: "VideoBox" instantiated altera_up_avalon_video_dma_controller "vide_dma_controller"
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_up_video_dma_control_slave.v
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_up_video_dma_to_memory.v
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_up_video_dma_to_stream.v
+Info: vide_dma_controller_CITANJE: Starting Generation of Video DMA Controller
+Info: vide_dma_controller_CITANJE: "VideoBox" instantiated altera_up_avalon_video_dma_controller "vide_dma_controller_CITANJE"
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_up_video_dma_control_slave.v
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_up_video_dma_to_memory.v
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_up_video_dma_to_stream.v
+Info: video_dual_clock_buffer: Starting Generation of the Dual Clock Buffer
+Info: video_dual_clock_buffer: "VideoBox" instantiated altera_up_avalon_video_dual_clock_buffer "video_dual_clock_buffer"
+Info: video_rgb_resampler_0: Starting Generation of Video RGB Resampler
+Info: video_rgb_resampler_0: "VideoBox" instantiated altera_up_avalon_video_rgb_resampler "video_rgb_resampler_0"
+Info: video_vga_controller: Starting Generation of VGA Controller
+Info: video_vga_controller: "VideoBox" instantiated altera_up_avalon_video_vga_controller "video_vga_controller"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "VideoBox" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "VideoBox" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_2: "VideoBox" instantiated altera_mm_interconnect "mm_interconnect_2"
+Info: rst_controller: "VideoBox" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "hps" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps" instantiated altera_hps_io "hps_io"
+Info: sys_pll: "sys_sdram_pll" instantiated altera_pll "sys_pll"
+Info: reset_from_locked: "sys_sdram_pll" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: vide_dma_controller_avalon_dma_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "vide_dma_controller_avalon_dma_master_translator"
+Info: sdram_controller_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "sdram_controller_s1_translator"
+Info: hps_h2f_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_h2f_axi_master_agent"
+Info: vide_dma_controller_avalon_dma_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "vide_dma_controller_avalon_dma_master_agent"
+Info: sdram_controller_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "sdram_controller_s1_agent"
+Info: sdram_controller_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "sdram_controller_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_006: "mm_interconnect_0" instantiated altera_merlin_router "router_006"
+Info: router_007: "mm_interconnect_0" instantiated altera_merlin_router "router_007"
+Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
+Info: hps_h2f_axi_master_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "hps_h2f_axi_master_wr_limiter"
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: sdram_controller_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "sdram_controller_s1_burst_adapter"
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_demux_006: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_006"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_006: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_006"
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: hps_h2f_axi_master_wr_to_sdram_controller_s1_cmd_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "hps_h2f_axi_master_wr_to_sdram_controller_s1_cmd_width_adapter"
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_1" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: router: "mm_interconnect_2" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_2" instantiated altera_merlin_router "router_001"
+Info: cmd_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/PC/Desktop/PDS/VideoBox_ImageTransformation_v3/VideoBox_presentable/VideoBox/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info: VideoBox: Done "VideoBox" with 66 modules, 131 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

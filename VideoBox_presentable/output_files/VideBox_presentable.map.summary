@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Mon Oct 26 12:49:45 2020
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : VideBox_presentable
+Top-level Entity Name : VideoBox_presentable
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 3619
+Total pins : 149
+Total virtual pins : 0
+Total block memory bits : 41,600
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 2
+Total DLLs : 1

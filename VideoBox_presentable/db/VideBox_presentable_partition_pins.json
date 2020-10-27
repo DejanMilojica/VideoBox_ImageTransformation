@@ -1,0 +1,297 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "xvga_bus_HS",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_VS",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_BLANK",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_R[3]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_R[4]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_R[5]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_R[6]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_R[7]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_G[0]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_G[1]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_G[2]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_G[3]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_G[4]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_G[5]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_G[6]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_G[7]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "xvga_bus_B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "xled_bus_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "xled_bus_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "xled_bus_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "xled_bus_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "xled_bus_export[4]",
+					"strict" : false
+				},
+				{
+					"name" : "xled_bus_export[5]",
+					"strict" : false
+				},
+				{
+					"name" : "xled_bus_export[6]",
+					"strict" : false
+				},
+				{
+					"name" : "xled_bus_export[7]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_ba[0]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_ba[1]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_cas_n",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_cs_n",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dqm[0]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dqm[1]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_ras_n",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_we_n",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[0]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[1]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[2]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[3]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[4]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[5]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[6]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[7]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[8]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[9]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[10]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[11]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[12]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[13]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[14]",
+					"strict" : false
+				},
+				{
+					"name" : "xsdram_bus_dq[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

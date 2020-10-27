@@ -1,0 +1,54 @@
+-- Pozicioniranje_Piksela_u_SDRAM.vhd
+
+-- This file was auto-generated as a prototype implementation of a module
+-- created in component editor.  It ties off all outputs to ground and
+-- ignores all inputs.  It needs to be edited to make it do something
+-- useful.
+-- 
+-- This file will not be automatically regenerated.  You should check it in
+-- to your version control system if you want to keep it.
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity Pozicioniranje_Piksela_u_SDRAM is
+	port (
+		reset_reset              : in  std_logic                     := '0';             --      reset.reset
+		clock_clk                : in  std_logic                     := '0';             --      clock.clk
+		out_piksel_data          : out std_logic_vector(15 downto 0);                    -- out_piksel.data
+		out_piksel_endofpacket   : out std_logic;                                        --           .endofpacket
+		out_piksel_ready         : in  std_logic                     := '0';             --           .ready
+		out_piksel_startofpacket : out std_logic;                                        --           .startofpacket
+		out_piksel_valid         : out std_logic;                                        --           .valid
+		in_piksel_ready          : out std_logic;                                        --  in_piksel.ready
+		in_piksel_valid          : in  std_logic                     := '0';             --           .valid
+		in_piksel_endofpacket    : in  std_logic                     := '0';             --           .endofpacket
+		in_piksel_data           : in  std_logic_vector(15 downto 0) := (others => '0'); --           .data
+		in_piksel_startofpacket  : in  std_logic                     := '0';             --           .startofpacket
+		in_xy_valid              : in  std_logic                     := '0';             --      in_xy.valid
+		in_xy_startofpacket      : in  std_logic                     := '0';             --           .startofpacket
+		in_xy_endofpacket        : in  std_logic                     := '0';             --           .endofpacket
+		in_xy_ready              : out std_logic;                                        --           .ready
+		in_xy_data               : in  std_logic_vector(31 downto 0) := (others => '0')  --           .data
+	);
+end entity Pozicioniranje_Piksela_u_SDRAM;
+
+architecture rtl of Pozicioniranje_Piksela_u_SDRAM is
+begin
+
+	-- TODO: Auto-generated HDL template
+
+	out_piksel_valid <= '0';
+
+	out_piksel_data <= "0000000000000000";
+
+	out_piksel_startofpacket <= '0';
+
+	out_piksel_endofpacket <= '0';
+
+	in_piksel_ready <= '0';
+
+	in_xy_ready <= '0';
+
+end architecture rtl; -- of Pozicioniranje_Piksela_u_SDRAM

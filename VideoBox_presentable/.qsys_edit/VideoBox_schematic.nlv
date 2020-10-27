@@ -1,0 +1,95 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst VideoBox.hps.dcan1 -pg 1
+preplace inst VideoBox.vide_dma_controller_CITANJE -pg 1 -lvl 3 -y 320
+preplace inst VideoBox.sys_sdram_pll -pg 1 -lvl 2 -y 280
+preplace inst VideoBox.hps.timer -pg 1
+preplace inst VideoBox.hps.dma -pg 1
+preplace inst VideoBox.hps.clk_0 -pg 1
+preplace inst VideoBox.hps.f2s_periph_ref_clk -pg 1
+preplace inst VideoBox.video_rgb_resampler_0 -pg 1 -lvl 8 -y 520
+preplace inst VideoBox.hps.hps_io.border -pg 1
+preplace inst VideoBox.Transformacija_Pozicije_Piksela -pg 1 -lvl 4 -y 170
+preplace inst VideoBox.video_dual_clock_buffer -pg 1 -lvl 7 -y 480
+preplace inst VideoBox.hps.axi_sdram -pg 1
+preplace inst VideoBox.hps.spim0 -pg 1
+preplace inst VideoBox.hps.fpgamgr -pg 1
+preplace inst VideoBox.vga_pll -pg 1 -lvl 6 -y 530
+preplace inst VideoBox.hps.spim1 -pg 1
+preplace inst VideoBox.hps.qspi -pg 1
+preplace inst VideoBox -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst VideoBox.hps.wd_timer0 -pg 1
+preplace inst VideoBox.hps.f2s_sdram_ref_clk -pg 1
+preplace inst VideoBox.video_vga_controller -pg 1 -lvl 9 -y 540
+preplace inst VideoBox.hps.eosc1 -pg 1
+preplace inst VideoBox.hps.wd_timer1 -pg 1
+preplace inst VideoBox.hps.eosc2 -pg 1
+preplace inst VideoBox.affine_matrix -pg 1 -lvl 5 -y 350
+preplace inst VideoBox.hps.sdmmc -pg 1
+preplace inst VideoBox.vide_dma_controller_CITANJE_0 -pg 1 -lvl 3 -y 480
+preplace inst VideoBox.hps.sdrctl -pg 1
+preplace inst VideoBox.hps.arm_gic_0 -pg 1
+preplace inst VideoBox.hps.clkmgr -pg 1
+preplace inst VideoBox.vide_dma_controller -pg 1 -lvl 5 -y 140
+preplace inst VideoBox.sdram_controller -pg 1 -lvl 9 -y 380
+preplace inst VideoBox.dma_afina_matrica_citanje -pg 1 -lvl 3 -y 220
+preplace inst VideoBox.Izbor_Prikaza_Slike_0 -pg 1 -lvl 6 -y 220
+preplace inst VideoBox.hps.gpio0 -pg 1
+preplace inst VideoBox.hps.l3regs -pg 1
+preplace inst VideoBox.hps.fpga_interfaces -pg 1
+preplace inst VideoBox.hps.gmac0 -pg 1
+preplace inst VideoBox.hps.timer0 -pg 1
+preplace inst VideoBox.hps.gpio1 -pg 1
+preplace inst VideoBox.hps.gmac1 -pg 1
+preplace inst VideoBox.hps.arm_a9_0 -pg 1
+preplace inst VideoBox.hps.timer1 -pg 1
+preplace inst VideoBox.hps.scu -pg 1
+preplace inst VideoBox.hps.gpio2 -pg 1
+preplace inst VideoBox.hps.arm_a9_1 -pg 1
+preplace inst VideoBox.hps.timer2 -pg 1
+preplace inst VideoBox.hps.timer3 -pg 1
+preplace inst VideoBox.hps.rstmgr -pg 1
+preplace inst VideoBox.hps.sysmgr -pg 1
+preplace inst VideoBox.hps -pg 1 -lvl 1 -y 320
+preplace inst VideoBox.sys_sdram_pll.sys_pll -pg 1
+preplace inst VideoBox.sys_sdram_pll.reset_from_locked -pg 1
+preplace inst VideoBox.led_indication_0 -pg 1 -lvl 3 -y 60
+preplace inst VideoBox.hps.i2c0 -pg 1
+preplace inst VideoBox.hps.usb0 -pg 1
+preplace inst VideoBox.hps.i2c1 -pg 1
+preplace inst VideoBox.hps.usb1 -pg 1
+preplace inst VideoBox.Image_Processing_0 -pg 1 -lvl 4 -y 280
+preplace inst VideoBox.hps.i2c2 -pg 1
+preplace inst VideoBox.hps.i2c3 -pg 1
+preplace inst VideoBox.hps.nand0 -pg 1
+preplace inst VideoBox.DMA_CONTROLLER_UPIS -pg 1 -lvl 5 -y 800
+preplace inst VideoBox.hps.axi_ocram -pg 1
+preplace inst VideoBox.hps.uart0 -pg 1
+preplace inst VideoBox.hps.uart1 -pg 1
+preplace inst VideoBox.hps.bridges -pg 1
+preplace inst VideoBox.hps.L2 -pg 1
+preplace inst VideoBox.hps.hps_io -pg 1
+preplace inst VideoBox.hps.dcan0 -pg 1
+preplace netloc FAN_OUT<net_container>VideoBox</net_container>(SLAVE)video_vga_controller.clk,(MASTER)vga_pll.outclk0,(SLAVE)video_dual_clock_buffer.clock_stream_out,(SLAVE)video_rgb_resampler_0.clk) 1 6 3 2330 610 2710 610 NJ
+preplace netloc INTERCONNECT<net_container>VideoBox</net_container>(MASTER)hps.h2f_axi_master,(MASTER)vide_dma_controller_CITANJE.avalon_dma_master,(MASTER)DMA_CONTROLLER_UPIS.avalon_dma_master,(MASTER)vide_dma_controller_CITANJE_0.avalon_dma_master,(MASTER)dma_afina_matrica_citanje.avalon_dma_master,(SLAVE)sdram_controller.s1,(SLAVE)affine_matrix.s1,(MASTER)vide_dma_controller.avalon_dma_master) 1 1 8 NJ 390 NJ 310 1220 560 1600 520 2020 430 NJ 430 NJ 430 NJ
+preplace netloc EXPORT<net_container>VideoBox</net_container>(SLAVE)VideoBox.ref_clock,(SLAVE)sys_sdram_pll.ref_clk) 1 0 2 NJ 280 NJ
+preplace netloc EXPORT<net_container>VideoBox</net_container>(SLAVE)VideoBox.led_bus,(SLAVE)led_indication_0.external_connection) 1 0 3 NJ 90 NJ 90 NJ
+preplace netloc POINT_TO_POINT<net_container>VideoBox</net_container>(SLAVE)video_vga_controller.avalon_vga_sink,(MASTER)video_rgb_resampler_0.avalon_rgb_source) 1 8 1 N
+preplace netloc POINT_TO_POINT<net_container>VideoBox</net_container>(MASTER)vide_dma_controller.avalon_pixel_source,(SLAVE)Izbor_Prikaza_Slike_0.in2) 1 5 1 2120
+preplace netloc EXPORT<net_container>VideoBox</net_container>(SLAVE)sdram_controller.wire,(SLAVE)VideoBox.sdram_bus) 1 0 9 NJ 450 NJ 450 NJ 450 NJ 540 NJ 540 NJ 450 NJ 450 NJ 450 NJ
+preplace netloc EXPORT<net_container>VideoBox</net_container>(SLAVE)hps.memory,(SLAVE)VideoBox.memory) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>VideoBox</net_container>(SLAVE)Transformacija_Pozicije_Piksela.in_dma_affine,(MASTER)dma_afina_matrica_citanje.avalon_pixel_source) 1 3 1 1300
+preplace netloc POINT_TO_POINT<net_container>VideoBox</net_container>(MASTER)video_dual_clock_buffer.avalon_dc_buffer_source,(SLAVE)video_rgb_resampler_0.avalon_rgb_sink) 1 7 1 N
+preplace netloc POINT_TO_POINT<net_container>VideoBox</net_container>(MASTER)Image_Processing_0.out0,(SLAVE)DMA_CONTROLLER_UPIS.avalon_dma_sink) 1 4 1 1580
+preplace netloc POINT_TO_POINT<net_container>VideoBox</net_container>(SLAVE)Image_Processing_0.in0,(MASTER)vide_dma_controller_CITANJE_0.avalon_pixel_source) 1 3 1 1240
+preplace netloc POINT_TO_POINT<net_container>VideoBox</net_container>(SLAVE)led_indication_0.s1,(MASTER)Izbor_Prikaza_Slike_0.led_master) 1 2 5 800 170 NJ 120 NJ 120 NJ 120 2350
+preplace netloc EXPORT<net_container>VideoBox</net_container>(SLAVE)VideoBox.vga_bus,(SLAVE)video_vga_controller.external_interface) 1 0 9 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ
+preplace netloc POINT_TO_POINT<net_container>VideoBox</net_container>(SLAVE)video_dual_clock_buffer.avalon_dc_buffer_sink,(MASTER)Izbor_Prikaza_Slike_0.out) 1 6 1 2350
+preplace netloc POINT_TO_POINT<net_container>VideoBox</net_container>(MASTER)vide_dma_controller_CITANJE.avalon_pixel_source,(SLAVE)Izbor_Prikaza_Slike_0.in1) 1 3 3 NJ 500 NJ 500 2040
+preplace netloc FAN_OUT<net_container>VideoBox</net_container>(SLAVE)DMA_CONTROLLER_UPIS.avalon_dma_control_slave,(MASTER)hps.h2f_lw_axi_master,(SLAVE)vide_dma_controller.avalon_dma_control_slave,(SLAVE)vide_dma_controller_CITANJE_0.avalon_dma_control_slave,(SLAVE)Image_Processing_0.s0,(SLAVE)vide_dma_controller_CITANJE.avalon_dma_control_slave,(SLAVE)Izbor_Prikaza_Slike_0.izbor_slike) 1 1 5 NJ 410 820 470 1320 690 1660 280 NJ
+preplace netloc EXPORT<net_container>VideoBox</net_container>(MASTER)sys_sdram_pll.sdram_clk,(MASTER)VideoBox.sdram_clock) 1 2 8 NJ 210 NJ 390 NJ 300 NJ 350 NJ 350 NJ 350 NJ 350 NJ
+preplace netloc POINT_TO_POINT<net_container>VideoBox</net_container>(SLAVE)sys_sdram_pll.ref_reset,(MASTER)hps.h2f_reset) 1 1 1 450
+preplace netloc FAN_OUT<net_container>VideoBox</net_container>(SLAVE)vide_dma_controller_CITANJE.reset,(SLAVE)video_rgb_resampler_0.reset,(SLAVE)video_dual_clock_buffer.reset_stream_out,(SLAVE)sdram_controller.reset,(MASTER)sys_sdram_pll.reset_source,(SLAVE)dma_afina_matrica_citanje.reset,(SLAVE)affine_matrix.reset2,(SLAVE)video_vga_controller.reset,(SLAVE)Image_Processing_0.reset,(SLAVE)led_indication_0.reset,(SLAVE)video_dual_clock_buffer.reset_stream_in,(SLAVE)Transformacija_Pozicije_Piksela.reset,(SLAVE)DMA_CONTROLLER_UPIS.reset,(SLAVE)vide_dma_controller_CITANJE_0.reset,(SLAVE)vga_pll.reset,(SLAVE)vide_dma_controller.reset,(SLAVE)Izbor_Prikaza_Slike_0.reset,(SLAVE)affine_matrix.reset1) 1 2 7 780 50 1320 160 1620 320 2120 520 2310 470 2690 510 2940
+preplace netloc FAN_OUT<net_container>VideoBox</net_container>(SLAVE)affine_matrix.clk1,(SLAVE)vga_pll.refclk,(SLAVE)hps.h2f_lw_axi_clock,(SLAVE)DMA_CONTROLLER_UPIS.clk,(SLAVE)affine_matrix.clk2,(SLAVE)sdram_controller.clk,(SLAVE)dma_afina_matrica_citanje.clk,(SLAVE)vide_dma_controller.clk,(SLAVE)led_indication_0.clk,(SLAVE)Transformacija_Pozicije_Piksela.clock,(SLAVE)vide_dma_controller_CITANJE_0.clk,(SLAVE)hps.h2f_axi_clock,(SLAVE)vide_dma_controller_CITANJE.clk,(MASTER)sys_sdram_pll.sys_clk,(SLAVE)Image_Processing_0.clock,(SLAVE)Izbor_Prikaza_Slike_0.clock,(SLAVE)video_dual_clock_buffer.clock_stream_in) 1 0 9 100 430 NJ 430 760 30 1340 140 1640 560 2080 500 2330 390 NJ 390 NJ
+levelinfo -pg 1 0 70 3280
+levelinfo -hier VideoBox 80 220 590 900 1400 1700 2180 2420 2760 3030 3180
